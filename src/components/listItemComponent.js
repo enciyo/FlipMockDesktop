@@ -1,7 +1,7 @@
-import React, {useContext} from "react";
+import React from "react";
 import {Button, List} from "antd";
-import {AiOutlineDelete} from "react-icons/ai";
-import {FlipMockContext} from "../AppContext";
+import {useDispatch} from "react-redux";
+import {deleteMock, selectMock, updateMock} from "../redux/actionCreators";
 
 const layoutStyle = {
     backgroundColor: "white",
@@ -13,29 +13,20 @@ const layoutStyle = {
 };
 
 
-const EndpointListItem = (props) => {
+const ListItemComponent = props => {
     const {cellItem} = props;
-    const [state, dispatch] = useContext(FlipMockContext);
     if (cellItem === undefined) return null;
-    const isSelected = cellItem.isSelected
+    const {isShow, endpoint} = cellItem
+    const dispatch = useDispatch()
 
     const onDelete = () => {
-        dispatch({
-            type: "Delete",
-            payload: cellItem
-        });
+        dispatch(deleteMock(cellItem))
     }
     const onEdit = () => {
-        dispatch({
-            type: "Edit",
-            payload: cellItem
-        });
+        dispatch(updateMock(cellItem))
     }
     const onSelected = () => {
-        dispatch({
-            type: "Select",
-            payload: cellItem
-        });
+        dispatch(selectMock(cellItem))
     }
 
     const DeleteButton = () => {
@@ -46,16 +37,16 @@ const EndpointListItem = (props) => {
         return <Button onClick={onEdit}>Edit</Button>
     }
     const ShowButton = () => {
-        return <Button onClick={onSelected}>{isSelected ? "Hide" : "Show"}</Button>
+        return <Button onClick={onSelected}>{isShow ? "Hide" : "Show"}</Button>
     };
 
     return <>
         <List.Item
             style={layoutStyle}
             actions={[<EditButton/>, <ShowButton/>, <DeleteButton/>]}>
-            <div onClick={onSelected}>{cellItem.endpoint}</div>
+            <div onClick={onSelected}>{endpoint}</div>
         </List.Item>
     </>
 };
 
-export default EndpointListItem;
+export default ListItemComponent;

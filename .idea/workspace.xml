@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="" />
+    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/listComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modalComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sidebarComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actionCreators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/createReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/createStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MockApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MockApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/createExport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EndpointList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EndpointListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/listItemComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InputForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/react-hooks-context-app" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1sofSDuHRPo4icPNy66SAAL74RF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,6 +53,12 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/context" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.fast">
     <configuration default="true" type="js.build_tools.grunt">
@@ -89,7 +116,12 @@
       <workItem from="1621614282637" duration="4025000" />
       <workItem from="1622140655347" duration="1629000" />
       <workItem from="1622223393436" duration="29000" />
-      <workItem from="1622223481552" duration="4384000" />
+      <workItem from="1622223481552" duration="21931000" />
+      <workItem from="1622268740800" duration="26119000" />
+      <workItem from="1622789808942" duration="46000" />
+      <workItem from="1622818960817" duration="1745000" />
+      <workItem from="1622882110225" duration="4728000" />
+      <workItem from="1622895470888" duration="5714000" />
     </task>
     <servers />
   </component>
@@ -106,5 +138,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
