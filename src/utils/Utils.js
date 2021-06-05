@@ -1,10 +1,17 @@
-const prettyJson = (dummyJsonData: string) => {
-  var ugly = dummyJsonData;
-  var obj = JSON.parse(ugly);
-  var pretty = JSON.stringify(obj, undefined, 4);
-  return pretty;
+const prettyJson = (dummyJsonData) => {
+    let obj = JSON.parse(dummyJsonData);
+    return JSON.stringify(obj, undefined, 4);
+};
+
+const checkJsonIsValid = (dummyJsonData) => {
+    try {
+        return prettyJson(dummyJsonData);
+    } catch (e) {
+        return null
+    }
 };
 
 export {
-  prettyJson,
+    prettyJson,
+    checkJsonIsValid
 }

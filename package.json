@@ -5,7 +5,7 @@
   "description": "Network",
   "version": "0.0.2",
   "main": "dist/bundle.js",
-  "flipperBundlerEntry": "src/index.js",
+  "flipperBundlerEntry": "src/index.tsx",
   "license": "MIT",
   "keywords": [
     "flipper-plugin",
@@ -17,7 +17,7 @@
   "category": "Mock Plugin",
   "scripts": {
     "dev": "cd ~/Desktop/flipper/desktop/ && yarn dev-server",
-    "fast": "cd ~/Desktop/flipper/desktop/ && watch && --fast-refresh launcher=false",
+    "fast": "cd ~/Desktop/flipper/desktop/ && yarn dev-server --fast-refresh launcher=false",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepack": "flipper-pkg lint && flipper-pkg bundle"
   },
@@ -28,14 +28,21 @@
     "react-dom": "*"
   },
   "devDependencies": {
+    "@reduxjs/toolkit": "^1.5.1",
     "electron-devtools-installer": "^3.2.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "metro": "^0.66.0"
   },
   "dependencies": {
+    "conditional-expression": "^1.1.2",
     "react-icons": "^4.2.0",
     "react-json-pretty": "^2.2.0",
     "react-json-view": "^1.21.3",
+    "react-redux": "^7.2.4",
+    "react-uuid": "^1.0.2",
+    "redux": "^4.1.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
     "uniqid": "^5.3.0"
   }
 }
