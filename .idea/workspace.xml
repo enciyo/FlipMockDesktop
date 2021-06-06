@@ -1,41 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="committt">
-      <change afterPath="$PROJECT_DIR$/src/store/createReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/createStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/model/AppState.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/model/Mock.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/model/Types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/listComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/modalComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sidebarComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actionCreators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/createReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/createStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-hooks-context-app" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MockApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/listComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/listItemComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItemComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modalComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebarComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SidebarComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actionCreators.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actionTypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/createReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/createStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/createExport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MockApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MockApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/createExport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EndpointList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EndpointListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/listItemComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InputForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,19 +51,16 @@
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/typescripts" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/context" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.fast">
     <configuration default="true" type="js.build_tools.grunt">
       <node-interpreter value="project" />
       <envs />
@@ -109,8 +97,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.fast" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -133,19 +121,8 @@
       <workItem from="1622789808942" duration="46000" />
       <workItem from="1622818960817" duration="1745000" />
       <workItem from="1622882110225" duration="4728000" />
-      <workItem from="1622895470888" duration="16081000" />
-      <workItem from="1622924413273" duration="275000" />
-      <workItem from="1622968794990" duration="7574000" />
-      <workItem from="1622990727510" duration="205000" />
+      <workItem from="1622895470888" duration="5714000" />
     </task>
-    <task id="LOCAL-00001" summary="committt">
-      <created>1622902236383</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1622902236383</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,9 +139,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="committt" />
-    <option name="LAST_COMMIT_MESSAGE" value="committt" />
   </component>
 </project>
