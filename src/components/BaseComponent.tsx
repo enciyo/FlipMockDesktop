@@ -7,6 +7,8 @@ import {styled, usePlugin,} from "flipper-plugin";
 import {useDispatch} from "react-redux";
 import {plugin} from "../index";
 import {appStore} from "../store/createStore";
+import {act} from "react-dom/test-utils";
+import {initialMock} from "../store/model/Mock";
 
 const {Header, Content} = Layout;
 
@@ -17,7 +19,7 @@ const BaseComponent = (props) => {
 
 
     const openModal = () => {
-        dispatch(actions.updateModalVisibility(true))
+        dispatch(actions.editMockAction(initialMock()))
     };
 
     return (

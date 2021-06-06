@@ -12,12 +12,14 @@ const rootStyle = {
 
 function plugin(client) {
 
-    const addMockAction = (mock: Mock) => dispatch => {
-        client.send(Types.ADD, mock)
-        dispatch({
-            type: Types.ADD,
-            payload: mock
-        })
+    const addMockAction = (mock: Mock) => {
+        return async (dispatch,getState) => {
+            client.send(Types.ADD, mock)
+            dispatch({
+                type: Types.ADD,
+                payload: mock
+            })
+        }
     }
 
 
@@ -36,6 +38,15 @@ function plugin(client) {
             client.send(Types.UPDATE, mock)
             dispatch({
                 type: Types.UPDATE,
+                payload: mock
+            })
+        }
+    }
+
+    const editMockAction = (mock:Mock) => {
+        return async (dispatch, getState) => {
+            dispatch({
+                type: Types.EDIT,
                 payload: mock
             })
         }
@@ -83,7 +94,8 @@ function plugin(client) {
         addAllMockAction,
         selectMock,
         updateModalVisibility,
-        hideSelectMock
+        hideSelectMock,
+        editMockAction
     };
 }
 

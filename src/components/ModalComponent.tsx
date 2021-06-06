@@ -1,11 +1,10 @@
-import {useState} from "react";
+import {useLayoutEffect, useState} from "react";
 import {Button, Col, Input, Modal} from "antd";
 import {styled, usePlugin} from "flipper-plugin";
 import "../utils/Utils";
 import {checkJsonIsValid} from "../utils/Utils";
 import {useDispatch, useSelector} from "react-redux";
 import {AppState} from "../store/model/AppState";
-import {initialMock} from "../store/model/Mock";
 import {plugin} from "../index";
 
 const SCol = styled(Col)({
@@ -18,11 +17,17 @@ const {TextArea} = Input;
 const ModalComponent = (props) => {
 
     const isShowModal = useSelector((state: AppState) => state.isVisibleModal)
+    const currentMock = useSelector((state: AppState) => state.mock)
+    const isUpdate = useSelector((state:AppState) => state.mocks.find(item => item.uniqueId === currentMock.uniqueId) !== undefined)
     const dispatch = useDispatch()
-    const [mock, setMock] = useState(initialMock)
+    const [mock, setMock] = useState(currentMock)
     const [isJsonValid, setIsJsonValid] = useState(true)
     const {endpoint, dummyJsonData} = mock
     const actions = usePlugin(plugin)
+
+    useLayoutEffect(()=>{
+        setMock(currentMock);
+    },[currentMock])
 
     const onCancel = () => {
         clearStateAndFinish()
@@ -31,13 +36,17 @@ const ModalComponent = (props) => {
     const onOk = async () => {
         let isValid = handleFormat()
         if (isValid) {
-            dispatch(actions.addMockAction(mock))
+            if (isUpdate){
+                dispatch(actions.updateMockAction(mock))
+            }else{
+                dispatch(actions.addMockAction(mock))
+            }
+
             clearStateAndFinish()
         }
     }
 
     const clearStateAndFinish = () => {
-        setMock(initialMock)
         dispatch(actions.updateModalVisibility(false))
     }
 

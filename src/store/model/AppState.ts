@@ -3,13 +3,15 @@ import {initialMock, Mock} from "./Mock";
 interface AppState {
     mocks: Mock[],
     isVisibleModal: boolean,
-    selectedItem: Mock
+    selectedItem: Mock,
+    mock: Mock
 }
 
 const initialState: AppState = {
     mocks: [],
     isVisibleModal: false,
-    selectedItem: null
+    selectedItem: null,
+    mock: initialMock()
 }
 
 export {

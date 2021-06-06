@@ -15,7 +15,7 @@ const ListItemComponent = (props) => {
         dispatch(actions.deleteMockAction(cellItem))
     }
     const onEdit = () => {
-        dispatch(actions.updateMockAction(cellItem))
+        dispatch(actions.editMockAction(cellItem))
     }
     const onSelected = () => {
         dispatch(actions.selectMock(cellItem))

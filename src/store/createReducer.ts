@@ -30,7 +30,12 @@ export default function createReducer(state: AppState = initialState, action: Pa
             }
         }
         case Types.EDIT: {
-            return state
+            return {
+                ...state,
+                selectedItem: null,
+                mock: action.payload,
+                isVisibleModal: true
+            }
         }
         case Types.SELECT: {
             let item = state.mocks.map(item => {
