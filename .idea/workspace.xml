@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/listComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modalComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sidebarComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actionCreators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/createReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/createStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MockApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MockApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/createExport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EndpointList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EndpointListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/listItemComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InputForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="fix Utils" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +9,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="ProjectId" id="1sofSDuHRPo4icPNy66SAAL74RF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -123,10 +103,27 @@
       <workItem from="1622882110225" duration="4728000" />
       <workItem from="1622895470888" duration="5714000" />
     </task>
+    <task id="LOCAL-00001" summary="fix Utils">
+      <created>1622991242038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622991242038</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/listItemComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/sidebarComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/listComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/modalComponent.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -139,5 +136,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix Utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Utils" />
   </component>
 </project>
