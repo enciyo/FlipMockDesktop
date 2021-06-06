@@ -5,7 +5,7 @@
   "description": "Network",
   "version": "0.0.2",
   "main": "dist/bundle.js",
-  "flipperBundlerEntry": "src/index.tsx",
+  "flipperBundlerEntry": "src/index.js",
   "license": "MIT",
   "keywords": [
     "flipper-plugin",
@@ -39,9 +39,7 @@
     "react-json-pretty": "^2.2.0",
     "react-json-view": "^1.21.3",
     "react-redux": "^7.2.4",
-    "react-uuid": "^1.0.2",
     "redux": "^4.1.0",
-    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "uniqid": "^5.3.0"
   }
