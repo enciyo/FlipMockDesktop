@@ -1,7 +1,7 @@
 {
   "$schema": "https://fbflipper.com/schemas/plugin-package/v2.json",
-  "name": "flipper-plugin-mockito",
-  "id": "flipper-plugin-mockito",
+  "name": "flipper-plugin-enciyo-flipmock",
+  "id": "flipper-plugin-enciyo-flipmock",
   "description": "Network",
   "version": "0.0.2",
   "main": "dist/bundle.js",

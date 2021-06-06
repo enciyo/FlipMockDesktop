@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="fix Utils" />
+    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="removed js">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="tsx-integrate" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
   </component>
@@ -112,13 +119,32 @@
       <option name="project" value="LOCAL" />
       <updated>1622991242038</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix tsx">
+      <created>1622991479923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622991479923</updated>
+    </task>
+    <task id="LOCAL-00003" summary="removed js">
+      <created>1622991614187</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622991614187</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/listItemComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/sidebarComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/listComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/modalComponent.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/listItemComponent.js" />
         <option value="$PROJECT_DIR$/src/components/sidebarComponent.js" />
@@ -141,6 +167,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix Utils" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix Utils" />
+    <MESSAGE value="fix tsx" />
+    <MESSAGE value="removed js" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed js" />
   </component>
 </project>
