@@ -5,7 +5,7 @@
   "description": "Network",
   "version": "0.0.2",
   "main": "dist/bundle.js",
-  "flipperBundlerEntry": "src/index.js",
+  "flipperBundlerEntry": "src/index.tsx",
   "license": "MIT",
   "keywords": [
     "flipper-plugin",
