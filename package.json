@@ -1,24 +1,20 @@
 {
   "$schema": "https://fbflipper.com/schemas/plugin-package/v2.json",
   "name": "flipper-plugin-enciyo-flipmock",
-  "id": "flipper-plugin-enciyo-flipmock",
+  "id": "enciyo-flipmock",
   "description": "Network",
-  "version": "0.0.2",
+  "version": "1.0.1",
   "main": "dist/bundle.js",
   "flipperBundlerEntry": "src/index.tsx",
   "license": "MIT",
   "keywords": [
-    "flipper-plugin",
-    "react-native",
-    "kotlin",
-    "mock-network"
+    "flipper-plugin"
   ],
-  "title": "Mockito",
+  "title": "FlipMock",
   "category": "Mock Plugin",
   "scripts": {
     "dev": "cd ~/Desktop/flipper/desktop/ && yarn dev-server",
     "fast": "cd ~/Desktop/flipper/desktop/ && yarn dev-server --fast-refresh launcher=false",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepack": "flipper-pkg lint && flipper-pkg bundle"
   },
   "peerDependencies": {
@@ -28,18 +24,23 @@
     "react-dom": "*"
   },
   "devDependencies": {
-    "@reduxjs/toolkit": "^1.5.1",
-    "electron-devtools-installer": "^3.2.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "metro": "^0.66.0"
+    "flipper-pkg": "latest",
+    "metro": "^0.66.0",
+    "react-uuid": "^1.0.2"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.5.1",
     "conditional-expression": "^1.1.2",
+    "electron-devtools-installer": "^3.2.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "flipper": "latest",
     "react-icons": "^4.2.0",
     "react-json-pretty": "^2.2.0",
     "react-json-view": "^1.21.3",
     "react-redux": "^7.2.4",
+    "react-uuid": "^1.0.2",
     "redux": "^4.1.0",
+    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "uniqid": "^5.3.0"
   }
