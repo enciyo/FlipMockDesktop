@@ -1,5 +1,6 @@
 enum Types {
     ADD = "Add",
+    CONFIG = "Config",
     DELETE = "Remove",
     UPDATE = "Update",
     ADD_ALL = "AddAll",

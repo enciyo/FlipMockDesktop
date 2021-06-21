@@ -20,7 +20,7 @@ export default function createReducer(state: AppState = initialState, action: Pa
         case Types.ADD_ALL: {
             return {
                 ...state,
-                mocks: state.mocks.concat(action.payload)
+                mocks: action.payload
             }
         }
         case Types.CLEAR: {
@@ -69,6 +69,12 @@ export default function createReducer(state: AppState = initialState, action: Pa
             return {
                 ...state,
                 mocks: item
+            }
+        }
+        case Types.CONFIG: {
+            return {
+                ...state,
+                config: action.payload
             }
         }
         default:

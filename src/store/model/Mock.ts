@@ -1,11 +1,15 @@
 import uuid from 'react-uuid'
+import HttpMethods from "./HttpMethods";
 
 
 interface Mock {
     uniqueId: string,
     endpoint: string,
     dummyJsonData: string,
-    isShow: boolean
+    isShow: boolean,
+    httpMethod: string,
+    queryParams: string,
+    statusCode: number
 }
 
 function initialMock(): Mock {
@@ -13,7 +17,10 @@ function initialMock(): Mock {
         uniqueId: uuid(),
         endpoint: "",
         dummyJsonData: "",
-        isShow: false
+        httpMethod: HttpMethods.NOT_CHECK,
+        queryParams: "",
+        isShow: false,
+        statusCode: null
     }
 }
 

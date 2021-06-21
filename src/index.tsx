@@ -3,6 +3,9 @@ import {Provider} from "react-redux";
 import {appStore} from "./store/createStore";
 import Types from "./store/model/Types";
 import {Mock} from "./store/model/Mock";
+import LocalDataSource from "./utils/LocalDataSource";
+import {AppState} from "./store/model/AppState";
+import {Config} from "./store/model/Config";
 
 const rootStyle = {
     backgroundColor: "white",
@@ -12,8 +15,34 @@ const rootStyle = {
 
 function plugin(client) {
 
+    client.onDisconnect(() => {
+        console.log("OnDisconnected")
+        LocalDataSource.saveCurrentState(appStore.getState())
+    })
+
+    client.onConnect(() => {
+        console.log("onConnected")
+        let lastState = LocalDataSource.getCurrentState()
+        appStore.dispatch<any>(addAllMockAction(lastState.mocks))
+        appStore.dispatch<any>(changeMockIsEnable(lastState.config.isMockEnable))
+    })
+
+    const changeMockIsEnable = (isEnable: boolean) =>{
+        return async (dispatch, getState) => {
+            let config = {
+                isMockEnable: isEnable,
+                isLogging: appStore.getState().config.isLogging
+            } as Config
+            client.send(Types.CONFIG, config)
+            dispatch({
+                type: Types.CONFIG,
+                payload: config
+            })
+        }
+    }
+
     const addMockAction = (mock: Mock) => {
-        return async (dispatch,getState) => {
+        return async (dispatch, getState) => {
             client.send(Types.ADD, mock)
             dispatch({
                 type: Types.ADD,
@@ -43,7 +72,7 @@ function plugin(client) {
         }
     }
 
-    const editMockAction = (mock:Mock) => {
+    const editMockAction = (mock: Mock) => {
         return async (dispatch, getState) => {
             dispatch({
                 type: Types.EDIT,
@@ -53,11 +82,13 @@ function plugin(client) {
     }
 
 
-    const addAllMockAction = (mocks: [Mock]) => {
+    const addAllMockAction = (mocks: Mock[]) => {
         return async (dispatch, getState) => {
-            client.send(Types.ADD_ALL, mocks)
+            client.send(Types.ADD_ALL, {
+                "AddAll": mocks
+            })
             dispatch({
-                type: Types.UPDATE,
+                type: Types.ADD_ALL,
                 payload: mocks
             })
         }
@@ -95,7 +126,8 @@ function plugin(client) {
         selectMock,
         updateModalVisibility,
         hideSelectMock,
-        editMockAction
+        editMockAction,
+        changeMockIsEnable
     };
 }
 

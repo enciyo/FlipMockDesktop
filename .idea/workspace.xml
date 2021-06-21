@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="removed js">
+    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="feature mock editable">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/art.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/model/Config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/model/HttpMethods.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/LocalDataSource.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BaseComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ListItemComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItemComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ModalComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/createReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/createReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/model/AppState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/model/AppState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Utils.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Utils.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/model/Mock.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/model/Mock.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/model/Types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/model/Types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/context" />
     </key>
@@ -118,7 +132,14 @@
       <workItem from="1622818960817" duration="1745000" />
       <workItem from="1622882110225" duration="4728000" />
       <workItem from="1622895470888" duration="5714000" />
-      <workItem from="1622993177029" duration="2207000" />
+      <workItem from="1622993177029" duration="3431000" />
+      <workItem from="1623063752109" duration="2403000" />
+      <workItem from="1623069110945" duration="1101000" />
+      <workItem from="1623145065313" duration="1153000" />
+      <workItem from="1623866794679" duration="1245000" />
+      <workItem from="1623944614149" duration="10535000" />
+      <workItem from="1624131662705" duration="797000" />
+      <workItem from="1624288321023" duration="7839000" />
     </task>
     <task id="LOCAL-00001" summary="fix Utils">
       <created>1622991242038</created>
@@ -148,25 +169,18 @@
       <option name="project" value="LOCAL" />
       <updated>1622991727063</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feature mock editable">
+      <created>1622996073943</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1622996073943</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/listItemComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/sidebarComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/listComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/modalComponent.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/listItemComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/sidebarComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/listComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/modalComponent.js" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -185,6 +199,7 @@
     <MESSAGE value="fix tsx" />
     <MESSAGE value="renamed plugin Id" />
     <MESSAGE value="removed js" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed js" />
+    <MESSAGE value="feature mock editable" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature mock editable" />
   </component>
 </project>

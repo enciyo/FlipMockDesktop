@@ -1,13 +1,15 @@
-import {Button, List} from "antd";
+import {Button, List, Space, Typography} from "antd";
 import {useDispatch} from "react-redux";
 import {usePlugin} from "flipper-plugin";
 import {plugin} from "../index";
+import {Mock} from "../store/model/Mock";
 
+const {Text} = Typography;
 
 
 const ListItemComponent = (props) => {
     const {cellItem} = props;
-    const {isShow, endpoint} = cellItem
+    const {isShow, endpoint, httpMethod, statusCode,queryParams} = cellItem as Mock
     const dispatch = useDispatch()
     const actions = usePlugin(plugin)
 
@@ -35,7 +37,13 @@ const ListItemComponent = (props) => {
     return <>
         <List.Item
             actions={[<EditButton/>, <ShowButton/>, <DeleteButton/>]}>
-            <div onClick={onSelected}>{endpoint}</div>
+            <div onClick={onSelected}>
+                <Space direction="horizontal"  size="small" wrap={true}>
+                    <Text code>{statusCode ?? 200}</Text>
+                    <div style={{width: 120}}><Text code>{httpMethod}</Text></div>
+                    <Text>{endpoint}{ queryParams ? "?"+queryParams : ""} </Text>
+                </Space>
+            </div>
         </List.Item>
     </>
 };
