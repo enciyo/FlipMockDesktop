@@ -29,6 +29,6 @@ jobs:
 
       - name: Yarn Package Publish
         uses: luvies/action-yarn-publish@v0.1.1
-          with:
-            git-tag: true
+        with:
+          git-tag: false
         
