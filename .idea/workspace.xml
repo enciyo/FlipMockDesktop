@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="feature mock editable">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/art.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/model/Config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/model/HttpMethods.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/LocalDataSource.ts" afterDir="false" />
+    <list default="true" id="9c82f1b9-9667-44de-9e14-489948a19d02" name="Default Changelist" comment="Mock the response by HTTP method.&#10;Mock the response by query parameters.&#10;For response, support HTTP code&#10;Mock can be disable.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BaseComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListItemComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItemComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ModalComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModalComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/createReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/createReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/model/AppState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/model/AppState.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/model/Mock.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/model/Mock.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/model/Types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/model/Types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/circle.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +123,7 @@
       <workItem from="1623866794679" duration="1245000" />
       <workItem from="1623944614149" duration="10535000" />
       <workItem from="1624131662705" duration="797000" />
-      <workItem from="1624288321023" duration="7839000" />
+      <workItem from="1624288321023" duration="8466000" />
     </task>
     <task id="LOCAL-00001" summary="fix Utils">
       <created>1622991242038</created>
@@ -176,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622996073943</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Mock the response by HTTP method.&#10;Mock the response by query parameters.&#10;For response, support HTTP code&#10;Mock can be disable.">
+      <created>1624297480841</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624297480842</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +191,7 @@
     <MESSAGE value="renamed plugin Id" />
     <MESSAGE value="removed js" />
     <MESSAGE value="feature mock editable" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature mock editable" />
+    <MESSAGE value="Mock the response by HTTP method.&#10;Mock the response by query parameters.&#10;For response, support HTTP code&#10;Mock can be disable." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mock the response by HTTP method.&#10;Mock the response by query parameters.&#10;For response, support HTTP code&#10;Mock can be disable." />
   </component>
 </project>
