@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "cd ~/Desktop/flipper/desktop/ && yarn dev-server",
     "fast": "cd ~/Desktop/flipper/desktop/ && yarn dev-server --fast-refresh launcher=false",
-    "prepack": "flipper-pkg lint && flipper-pkg bundle"
+    "prepack": "npx flipper-pkg lint && npx flipper-pkg bundle"
   },
   "peerDependencies": {
     "flipper": "*",
