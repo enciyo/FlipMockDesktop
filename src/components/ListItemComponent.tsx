@@ -1,4 +1,4 @@
-import {Button, List, Space, Typography} from "antd";
+import {Button, List, Space, Switch, Typography} from "antd";
 import {useDispatch} from "react-redux";
 import {usePlugin} from "flipper-plugin";
 import {plugin} from "../index";
@@ -9,7 +9,7 @@ const {Text} = Typography;
 
 const ListItemComponent = (props) => {
     const {cellItem} = props;
-    const {isShow, endpoint, httpMethod, statusCode,queryParams} = cellItem as Mock
+    const {isShow, endpoint, httpMethod, statusCode,queryParams,isMockEnable} = cellItem as Mock
     const dispatch = useDispatch()
     const actions = usePlugin(plugin)
 
@@ -21,6 +21,11 @@ const ListItemComponent = (props) => {
     }
     const onSelected = () => {
         dispatch(actions.selectMock(cellItem))
+    }
+
+    const onChangedMockEnable = (isMockEnable:boolean) => {
+        cellItem.isMockEnable = isMockEnable
+        dispatch(actions.updateMockAction(cellItem))
     }
 
     const DeleteButton = () => {
@@ -37,8 +42,11 @@ const ListItemComponent = (props) => {
     return <>
         <List.Item
             actions={[<EditButton/>, <ShowButton/>, <DeleteButton/>]}>
-            <div onClick={onSelected}>
+            <div>
                 <Space direction="horizontal"  size="small" wrap={true}>
+                    <Switch defaultChecked={isMockEnable}  onChange={(checked, event) => {
+                        onChangedMockEnable(checked)
+                    }}/>
                     <Text code>{statusCode ?? 200}</Text>
                     <div style={{width: 120}}><Text code>{httpMethod}</Text></div>
                     <Text>{endpoint}{ queryParams ? "?"+queryParams : ""} </Text>

@@ -25,7 +25,7 @@ const ModalComponent = (props) => {
     const dispatch = useDispatch()
     const [mock, setMock] = useState(currentMock)
     const [isJsonValid, setIsJsonValid] = useState(true)
-    const {endpoint, dummyJsonData, httpMethod,queryParams,statusCode} = mock
+    const {endpoint, dummyJsonData, httpMethod, queryParams, statusCode} = mock
     const actions = usePlugin(plugin)
 
     useLayoutEffect(() => {
@@ -39,6 +39,13 @@ const ModalComponent = (props) => {
 
     const onOk = async () => {
         let isValid = handleFormat()
+        let isValidStatusCode = statusCode !== undefined && statusCode !== null
+        if (!isValidStatusCode) {
+            setMock({
+                ...mock,
+                statusCode: 200
+            })
+        }
         if (isValid) {
             if (isUpdate) {
                 dispatch(actions.updateMockAction(mock))

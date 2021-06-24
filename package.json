@@ -3,7 +3,7 @@
   "name": "flipper-plugin-enciyo-flipmock",
   "id": "enciyo-flipmock",
   "description": "Network",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "dist/bundle.js",
   "flipperBundlerEntry": "src/index.tsx",
   "license": "MIT",

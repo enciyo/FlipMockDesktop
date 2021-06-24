@@ -9,7 +9,8 @@ interface Mock {
     isShow: boolean,
     httpMethod: string,
     queryParams: string,
-    statusCode: number
+    statusCode: number,
+    isMockEnable:boolean
 }
 
 function initialMock(): Mock {
@@ -20,7 +21,8 @@ function initialMock(): Mock {
         httpMethod: HttpMethods.NOT_CHECK,
         queryParams: "",
         isShow: false,
-        statusCode: null
+        statusCode: 200,
+        isMockEnable:true
     }
 }
 
